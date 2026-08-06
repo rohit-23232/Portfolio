@@ -378,40 +378,6 @@ revealElements.forEach((element) => {
 HERO TYPING EFFECT
 ==================================================*/
 
-const heroTitle =
-    document.querySelector(".hero h1");
-
-if (heroTitle) {
-
-    const originalText =
-        heroTitle.innerHTML;
-
-    heroTitle.innerHTML = "";
-
-    let i = 0;
-
-    function typeHero() {
-
-        if (i < originalText.length) {
-
-            heroTitle.innerHTML +=
-                originalText.charAt(i);
-
-            i++;
-
-            setTimeout(typeHero, 22);
-
-        }
-
-    }
-
-    window.addEventListener("load", () => {
-
-        setTimeout(typeHero, 700);
-
-    });
-
-}
 
 /*==================================================
 COUNTER ANIMATION
